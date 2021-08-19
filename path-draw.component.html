@@ -1,0 +1,44 @@
+<svg width="800" height="500" (click)="onDraw($event)">
+    <path d="M100,100 l50,0 l0,50 l-50,0 l0,-50 z" style="
+            stroke: #ff0000; 
+            stroke-width:3; 
+            fill:none; 
+            stroke-dasharray:10 5;
+            fill:green;" />
+
+    <path d="M125,125 l50,0 l0,50 l-50,0 l0,-50 z" style="
+            stroke: #ff0000; 
+            stroke-width:3; 
+            fill:none; 
+            stroke-dasharray:10 5;
+            fill:green;
+            fill-opacity:0.25;
+            stroke-opacity:0.25;
+            " />
+
+    <path
+        [attr.d]=dPath
+        style="stroke: #020000; 
+                stroke-width:3; 
+                fill:gray;
+            " 
+    />
+
+    <path
+        d="M125,250 l100,0 l0,50 l-100,0 l0,-50 z" 
+        style="stroke: #020000; 
+                stroke-width:3; 
+                fill:gray;
+            " 
+    />
+
+
+    <path
+        d="M330,250 A50,50 0 1,1 329.9,249.9 Z " 
+        style="stroke: #020000; 
+                stroke-width:3; 
+                fill:gray;
+            " 
+    />
+    
+</svg>
